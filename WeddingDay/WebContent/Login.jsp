@@ -8,7 +8,7 @@
 </head>
 <body bgcolor=#ffc04d>
 <div class="page-header" align="center">
-  <h1>Wedding Day <br> <small>Najavi se!</small></h1>
+  <h1>Wedding Day  <br> <small>Najavi se!</small></h1>
 </div>
 <div align="center">
 E-mail:<br>
