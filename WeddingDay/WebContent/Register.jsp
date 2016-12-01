@@ -10,16 +10,18 @@
 <div class="page-header" align="center">
   <h1>Wedding Day <br> <small>Registriraj se!</small></h1>
 </div>
+<form action="Register" method="post" >
 <div align="center">
-Ime: <input type="text" name="text"><br><br>
-Prezime: <input type="text" name="text"><br><br>
-Telefon: <input type="text" name="text"><br><br>
-Adresa: <input type="text" name="text"><br><br> 
+Ime: <input type="text" name="ime"><br><br>
+Prezime: <input type="text" name="prezime"><br><br>
+Telefon: <input type="text" name="telefon"><br><br>
+Adresa: <input type="text" name="adresa"><br><br> 
 E-mail: <input type="text" name="email"><br><br>
 Password: <input type="password" name="password"><br><br>
 </div><br>
 <div class="panel-body" align="center">
 <button type="submit" class="btn btn-warning" onclick="location.href='/WeddingDay/Korisnik.jsp';">Registracija</button>
 </div>
+</form>
 </body>
 </html>

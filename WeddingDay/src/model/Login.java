@@ -1,5 +1,7 @@
 package model;
 
+import java.time.LocalDate;
+
 public class Login {
 	
 	 private int LID;
@@ -8,15 +10,26 @@ public class Login {
 	 private String Telefon;
 	 private String Adresa;
 	 private String Grad;
-	 private String DatumSvadba;
+	 private LocalDate DatumSvadba;
 	 private String Email;
 	 private String Password;
-	 
+	
 	 public Login(){
 		 super();
 	 }
 	 
-	 public Login (String Ime,String Prezime,String Telefon,String Adresa,String Grad,String DatumSvadba,String Email,String Password){
+	 public Login (String Ime,String Prezime,String Telefon,String Adresa,String Email,String Password){
+		 
+		 super();
+		 this.Ime=Ime;
+		 this.Prezime=Prezime;
+		 this.Telefon=Telefon;
+		 this.Adresa=Adresa;
+		 this.Email=Email;
+		 this.Password=Password;
+	 }
+	 
+	 public Login (String Ime,String Prezime,String Telefon,String Adresa,String Grad,LocalDate DatumSvadba,String Email,String Password){
 		 
 		 super();
 		 this.Ime=Ime;
@@ -24,7 +37,7 @@ public class Login {
 		 this.Telefon=Telefon;
 		 this.Adresa=Adresa;
 		 this.Grad=Grad;
-		 this.DatumSvadba=DatumSvadba;
+		 this.setDatumSvadba(DatumSvadba);
 		 this.Email=Email;
 		 this.Password=Password;
 	 }
@@ -77,13 +90,7 @@ public class Login {
 		Grad = grad;
 	}
 	
-	public String getDateOfDatumSvadba() {
-		return DatumSvadba;
-	}
 
-	public void setDateOfDatumSvadba(String datumsvadba) {
-		DatumSvadba = datumsvadba;
-	}
 
 	public String getEmail() {
 		return Email;
@@ -99,6 +106,14 @@ public class Login {
 
 	public void setPassword(String password) {
 		Password = password;
+	}
+
+	public LocalDate getDatumSvadba() {
+		return DatumSvadba;
+	}
+
+	public void setDatumSvadba(LocalDate datumSvadba) {
+		DatumSvadba = datumSvadba;
 	}
 
 }

@@ -13,7 +13,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </head>
-<body  background="sliki/Wedding-Day.jpg">
+<body  background="sliki/Wedding-Day.jpg" style="background-repeat: no-repeat;background-position: center;background-size:cover;">
  <div class="panel panel-default">
       <div class="panel-body">
       <button type="submit" class=" btn btn-warning pull-right" onclick="location.href='/WeddingDay/Register.jsp';" >Registracija</button>
